@@ -9,7 +9,9 @@ import TableHeader from "@tiptap/extension-table-header";
 import Underline from "@tiptap/extension-underline";
 import TableRow from "@tiptap/extension-table-row";
 import Image from "@tiptap/extension-image";
+import FontFamily from "@tiptap/extension-font-family";
 import ImageResize from "tiptap-extension-resize-image";
+import TextStyle from "@tiptap/extension-text-style";
 import { useEditorStore } from "@/store/use-editor-store";
 
 export const Editor = () => {
@@ -41,6 +43,8 @@ export const Editor = () => {
     },
     extensions: [
       StarterKit,
+      FontFamily,
+      TextStyle,
       Underline,
       Table,
       TableCell,
